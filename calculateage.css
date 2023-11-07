@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+body{
+    width:1440px;
+    height: 720px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+parent{
+    font-family: 'Poppins', sans-serif;
+    width:45%;
+    height:65%;
+    display:flex;
+    flex-direction: column;
+    row-gap:25px;
+    justify-content: center;
+    border:2px solid lightgray;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius:185px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding:55px;
+}
+#ageform{
+    width:100%;
+    height:120px;
+    font-size:14px;
+    font-weight:bold;
+    display:flex;
+    flex-direction:row;
+    column-gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(220, 220, 220); 
+}
+
+.labelin{
+    display:flex;
+    flex-direction:column;
+    row-gap:5px;
+    color:hsl(0, 1%, 44%);
+}
+input{
+    padding-left: 15px;
+    width:120px;
+    height:60px;
+    border:1px solid hsl(0, 1%, 74%);
+    border-radius: 10px;
+    font-size:25px;
+    color:gray;
+    font-weight: 800;
+}
+#btn{
+    position: absolute;
+    top:214px;
+    left:966px;
+    right:0px;
+    width:85px;
+    height:85px;
+    border:0px;
+    border-radius:50%;
+    background-color: hsl(259, 100%, 65%)
+}
+#output{
+    font-size:70px;
+    font-weight: 800;
+    font-style: italic;
+    display:flex;
+    flex-direction:column;
+    row-gap:5px;
+    padding: 0px;
+}
+
+.outputtext{
+    color:hsl(259, 100%, 65%);
+}
+.alert {
+    color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px; 
+    display: none; 
+    font-style: italic;
+  }
+/***********************************************************************************************************/
+@media only screen and (max-width: 375px) {
+
+ body{
+    width:375px;
+ }
+ parent{
+    justify-content: space-between;
+    width:75%;  
+    height: 58%;
+    padding: 40px 25px 40px 25px;
+    border-bottom-right-radius:120px;
+ }
+ #ageform{
+    width:100%;
+    height:100px;
+    margin-top: 0px;
+    column-gap: 15px;
+    padding-bottom: 30px;
+ }
+ input{
+    padding-left: 10px;
+    width:70px;
+    height:45px;
+    border:1px solid hsl(0, 1%, 74%);
+    border-radius: 8px;
+    font-size:20px;
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+ }
+ #btn{
+    width:55px;
+    height:55px;
+    position: absolute;
+    top:265px;
+    left:163px;
+    right:0px;
+ }
+ 
+#btn img{
+    width:25px;
+    height:25px;
+}
+ #output{
+    font-size:50px;
+    font-weight: 800;
+    row-gap:5px;
+ }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" href="./calculateage.css">
+    
+    </head>
+   
+    <Body>       
+        <parent>
+            <div id="ageform">
+                <div class="labelin">
+                    <label for="day" >Day:</label>
+                    <input type="text" id="day" value="DD">
+                    <div id="dayAlert" class="alert"></div>
+                </div>                
+                <div class="labelin">
+                    <label for="month">Month:</label>
+                    <input type="text" id="month"  value="MM">
+                    <div id="monthAlert" class="alert"></div>
+                </div>
+                <div class="labelin">
+                    <label for="year">Year:</label>
+                    <input type="text" id="year"  value="YYYY">
+                    <div id="yearAlert" class="alert"></div>
+                </div>           
+            </div> 
+            <button id="btn" type="button" aria-label="Arrow Button">
+                <img id="btnimg" src="./assets/images/icon-arrow.svg" alt="Arrow Icon">
+            </button>
+                  
+            <div id="output">
+                <span> <h id="outyear" class="outputtext">--</h><h> years</h>  </span>
+                <span> <h id="outmonth" class="outputtext">--</h><h> months</h> </span>
+                <span> <h id="outday" class="outputtext">--</h><h> days</h> </span>
+            </div>
+        
+        </parent>
+
+        <script src="calculateage.js"></script>  
+    </Body>
+</html>
